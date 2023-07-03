@@ -1,0 +1,133 @@
+.cardWrapper {
+  position: relative;
+  height: 300px;
+  width: 470px;
+  padding-top: 4px;
+}
+
+.cardContent,
+.shadow {
+  position: absolute;
+  height: 278px;
+  width: 416px;
+  box-sizing: border-box;
+  background-image: url(../../../public/cards/syntax.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 36px 18px 16px 40px;
+}
+
+.cardContent:hover {
+  left: 8px;
+  top: -2px;
+  cursor: pointer;
+}
+
+.shadow {
+  left: 1px;
+  width: 414px;
+  height: 276px;
+  margin-top: 1px;
+  z-index: -1;
+  background-image: url(../../../public/cards/syntax-shadow.svg);
+}
+
+.dash {
+  width: 46px;
+  height: 4px;
+  border-radius: 11px;
+  background: var(
+    --gradiant-gradiant-syntax,
+    linear-gradient(180deg, #38c1a5 0%, #0891d5 100%)
+  );
+}
+
+.title {
+  margin-top: 29px;
+  color: var(--text-text-white, #ededed);
+  font: 700 16px/100% NEXT Book;
+}
+
+.tagWrapper {
+  display: flex;
+}
+
+.tag {
+  margin-top: 16px;
+  margin-right: 16px;
+  display: flex;
+  padding: 4px 8px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 20px;
+  border: 1px solid var(--text-text-gray, #676767);
+  color: var(--color-white, #fff);
+  font: 400 9px/110% NEXT Book;
+}
+
+.description {
+  margin-top: 16px;
+  display: flex;
+  width: 336px;
+  height: 90px;
+  flex-direction: column;
+  color: var(--text-text-gray, #676767);
+  font: 400 12px/110% NEXT Book;
+}
+
+.footerWrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  color: var(--text-text-white-on-dark, #f2f2f2);
+  font: 400 12px/100% Neue Machina;
+}
+
+.time,
+.course,
+.progress {
+  display: flex;
+  align-items: center;
+}
+
+.course {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.progress {
+  width: 140px;
+  height: 36px;
+  box-sizing: border-box;
+  padding: 8px 16px;
+  border-radius: 40px;
+  background: var(--button-card-dark-gray-button, #2a2a2a);
+}
+
+.clockIcon,
+.bookIcon,
+.flightIcon {
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.clockIcon {
+  background-image: url(../../../public/cards/clock.svg);
+}
+
+.bookIcon {
+  background-image: url(../../../public/cards/book.svg);
+}
+
+.flightIcon {
+  background-image: url(../../../public/cards/flight.svg);
+}
+
+.progress .text {
+  color: var(--status-progress-green, #9efa13);
+  text-align: right;
+  font: 400 10px/110% NEXT Book;
+}

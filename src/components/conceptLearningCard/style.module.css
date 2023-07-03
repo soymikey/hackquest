@@ -1,0 +1,81 @@
+.cardWrapper {
+  position: relative;
+  height: 300px;
+  width: 470px;
+  padding-top: 4px;
+}
+
+.cardContent,
+.shadow {
+  position: absolute;
+  height: 278px;
+  width: 416px;
+  box-sizing: border-box;
+  background-image: url(../../../public/cards/concept-learning.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 36px 18px 16px 40px;
+}
+
+.cardContent:hover {
+  left: 8px;
+  top: -2px;
+  cursor: pointer;
+}
+
+.shadow {
+  left: 1px;
+  width: 414px;
+  height: 276px;
+  margin-top: 1px;
+  z-index: -1;
+  background-image: url(../../../public/cards/concept-learning-shadow.svg);
+}
+
+.dash {
+  width: 46px;
+  height: 4px;
+  border-radius: 11px;
+  background: var(
+    --gradiant-gradiant-concept,
+    linear-gradient(180deg, #e0ad38 0%, #eb3e1c 100%)
+  );
+}
+
+.bitcoin {
+  position: absolute;
+  top: 42px;
+  right: 20px;
+  width: 220px;
+  height: 220px;
+  background-image: url(../../../public/cards/bitcoinIcon.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.title {
+  position: absolute;
+  left: 30px;
+  top: 180px;
+  color: var(--text-text-white, #ededed);
+  font: 700 16px/100% NEXT Book;
+}
+
+.time {
+  position: absolute;
+  bottom: 20px;
+  left: 290px;
+  display: flex;
+  align-items: center;
+  color: var(--text-text-white-on-dark, #f2f2f2);
+  font: 400 12px/100% Neue Machina;
+}
+
+.clockIcon {
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-image: url(../../../public/cards/clock.svg);
+}

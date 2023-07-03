@@ -1,0 +1,20 @@
+@font-face {
+  font-family: Neue Machina;
+  src: url("../../public/fonts/neuemachina-regular.otf");
+}
+
+@font-face {
+  font-family: NEXT Book;
+  src: url("../../public/fonts/NEXT\ otf/NEXT-Book-Regular.otf");
+}
+
+@font-face {
+  font-family: NEXT Poster;
+  src: url("../../public/fonts/NEXT\ otf/NEXT-Poster-Regular.otf");
+}
+
+.layout {
+  height: 100vh;
+  background-color: #030303;
+  padding: 200px 124px;
+}

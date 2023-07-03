@@ -1,0 +1,87 @@
+.cardWrapper {
+  position: relative;
+  height: 300px;
+  width: 470px;
+  padding-top: 4px;
+}
+
+.cardContent,
+.shadow {
+  position: absolute;
+  height: 278px;
+  width: 416px;
+  box-sizing: border-box;
+  background-image: url(../../../public/cards/hackathon.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  padding: 36px 40px 16px 40px;
+}
+
+.cardContent:hover {
+  left: 8px;
+  top: -2px;
+  cursor: pointer;
+}
+
+.shadow {
+  left: 1px;
+  width: 414px;
+  height: 276px;
+  margin-top: 1px;
+  z-index: -1;
+  background-image: url(../../../public/cards/hackathon-shadow.svg);
+}
+
+.title {
+  color: var(--text-text-white, #ededed);
+  font: 700 16px/100% NEXT Book;
+}
+.tagWrapper {
+  display: flex;
+}
+.tag {
+  margin-top: 16px;
+  margin-right: 16px;
+  display: flex;
+  padding: 4px 8px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 20px;
+  border: 1px solid var(--text-text-gray, #676767);
+  color: var(--color-white, #fff);
+  font: 400 9px/110% NEXT Book;
+}
+
+.description {
+  margin-top: 16px;
+  display: flex;
+  width: 336px;
+  height: 90px;
+  flex-direction: column;
+  color: var(--text-text-gray, #676767);
+  font: 400 12px/110% NEXT Book;
+}
+
+.listWrapper {
+  margin-top: 67px;
+}
+
+.listItem {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  border-bottom: 1px solid #282828;
+  margin-bottom: 17px;
+}
+
+.itemTitle {
+  color: var(--text-text-gray, #676767);
+  font: 400 12px/110% NEXT Book;
+}
+
+.itemDetails {
+  color: var(--text-text-white, #ededed);
+  text-align: right;
+  font: 300 14px/100% Neue Machina;
+}

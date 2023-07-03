@@ -1,0 +1,32 @@
+.cardSwiper {
+  height: 500px;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  display: none;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  width: 48px;
+  height: 48px;
+}
+.swiper-button-prev {
+  background-image: url(../../../public/left-default.svg);
+}
+.swiper-button-next {
+  background-image: url(../../../public/right-default.svg);
+}
+.swiper-button-prev:hover {
+  background-image: url(../../../public/left-default.svg);
+}
+
+.swiper-button-next:hover {
+  background-image: url(../../../public/right-hovered.svg);
+}
+
+.swiper-button-disabled {
+  display: none;
+}
